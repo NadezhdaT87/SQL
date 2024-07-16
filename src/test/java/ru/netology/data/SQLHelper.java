@@ -14,7 +14,7 @@ public class SQLHelper {
 
     }
     private static Connection getConn() throws SQLException{
-        return DriverManager.getConnection(System.getProperty("db.url"), "app", "pass");
+        return DriverManager.getConnection(System.getProperty("app.url"), "app", "pass");
     }
     @SneakyThrows
     public static String getVerificationCode(){
